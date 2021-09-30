@@ -1,6 +1,7 @@
 # Acme Robotics PID Controller
 [![Build Status](https://app.travis-ci.com/anubhavparas/pid-controller-software.svg?branch=main)](https://app.travis-ci.com/anubhavparas/pid-controller-software)
 [![Coverage Status](https://coveralls.io/repos/github/anubhavparas/pid-controller-software/badge.svg?branch=main)](https://coveralls.io/github/anubhavparas/pid-controller-software?branch=main)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 ---
 
 ## Overview
