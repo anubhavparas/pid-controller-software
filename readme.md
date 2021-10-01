@@ -5,9 +5,9 @@
 ---
 Authors: 
 
-Driver: Anubhav Paras <https://github.com/anubhavparas>
+Driver: [Anubhav Paras](<https://github.com/anubhavparas>)
 
-Navigator: Charu Sharma <https://github.com/Sharma117555448>
+Navigator: [Charu Sharma](<https://github.com/Sharma117555448>)
 
 ## Overview
 
