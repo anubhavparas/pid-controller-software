@@ -27,10 +27,6 @@ The following are the proposed designs for the controller:
 
 Flow diagrams can be found [here](./docs/images/).
 
-![alt text](./docs/images/activity_diagram_PIDObjectCreation.png?raw=true "PID Controller Instance Creation")
-
-![alt text](./docs/images/activity_diagram_PID_compute_method.png?raw=true "PID Controller compute output logic")
-
 -----
 ### Implementation Instructions:
 <details>
@@ -39,7 +35,7 @@ Flow diagrams can be found [here](./docs/images/).
 + [pid.cpp](./src/pid.cpp)
     + Initialize the constructor params,
     + Implement the getters and setters,
-    + Implement the compute method as per the [activity diagram](./docs/images/activity_diagram_PID_compute_method.png).
+    + Implement the `compute(double, double)` method as per the [activity diagram](./docs/images/activity_diagram_PID_compute_method.png).
 + Look for `TODO(Pair2)` in the workspace and implement the required methods.
 
 </details>
@@ -64,7 +60,7 @@ sh build_coverage_off.sh
 ```
 
 ## Building for code coverage
-Install code-coverage tool: 
+Install code-coverage tool, else the code coverage command will not work. It is a one time installation: 
 ```
 sudo apt-get install lcov
 ```
