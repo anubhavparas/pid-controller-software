@@ -5,16 +5,31 @@
 ---
 Authors: 
 
+Part 1: Design:
+
 Driver: [Anubhav Paras](<https://github.com/anubhavparas>)
 
 Navigator: [Charu Sharma](<https://github.com/Sharma117555448>)
 
+Part 2: Implementation:
+
+Driver: 
+
+Navigator: 
+
 ## Overview
 
-Simple starter C++ project with:
+Acme Robotics needs a PID Controller software for the new mobile robot development project. This project develops a library for the PID controller. 
 
-- cmake
-- googletest
+The following are the proposed desgins for the controller:
+
+![alt text](./docs/images/pid_class_diagram.png?raw=true "PID Controller")
+
+![alt text](./docs/images/activity_diagram_PIDObjectCreation.png?raw=true "PID Controller Instance Creation")
+
+![alt text](./docs/images/activity_diagram_PID_compute_method.png?raw=true "PID Controller compute output logic")
+
+
 
 ## Standard install via command-line
 ```
@@ -28,7 +43,7 @@ Run tests: ./test/cpp-test
 Run program: ./app/shell-app
 ```
 
-## Building for code coverage (for assignments beginning in Week 4)
+## Building for code coverage
 ```
 sudo apt-get install lcov
 cmake -D COVERAGE=ON -D CMAKE_BUILD_TYPE=Debug ../
