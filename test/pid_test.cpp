@@ -27,7 +27,7 @@ TEST(PIDController_Test, invalid_dt_throws_exception) {
 }
 
 // To test that prev_error and integral_sum is 0 when
-// PIDController is intantiated
+// PIDController is instantiated
 TEST(PIDController_Test, prev_error_and_integralsum_zero_initially) {
   std::unique_ptr<AbstractPIDController> pidController(
       new PIDController(0.1, 0.1, 0.1, 100.0, -100.0, 0.1));
@@ -36,7 +36,7 @@ TEST(PIDController_Test, prev_error_and_integralsum_zero_initially) {
   EXPECT_EQ(0, pidController->get_integral_sum());
 }
 
-// Test set_dt() with invalid sampling time (dt): dt > 0
+// Test set_dt() with invalid sampling time (dt): with dt <= 0
 TEST(PIDController_Test, set_invalid_dt_throws_exception) {
   std::unique_ptr<AbstractPIDController> pidController(
       new PIDController(0.1, 0.1, 0.1, 100.0, -100.0, 0.1));
@@ -109,8 +109,6 @@ TEST(PIDController_Test, integral_sum_is_set_after_compute) {
   // the integral_sum value should be set to the current integral_sum
   EXPECT_EQ(integral_sum, new_integral_sum);
 }
-
-
 
 
 // To test if compute() method works fine and returns appropriate value
