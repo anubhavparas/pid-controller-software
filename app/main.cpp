@@ -1,6 +1,15 @@
-/** Copyright 2021 Anubhav Paras  */
+/** Copyright 2021 Anubhav Paras, Charu Sharma, Arunava Basu & Shon Cortes  
+ *  Part 1: Design:
+ *  - Driver: Anubhav Paras
+ *  - Navigator: Charu Sharma
+ * 
+ *  Part 2: Implementation:
+ *  - Driver:
+ *  - Navigator:
+*/
+
 #include <iostream>
-#include <lib.hpp>
+
 
 int main() {
     return 0;
