@@ -104,15 +104,15 @@ In your work directory, use cmake to create an Eclipse project for an [out-of-so
 
 ```
 cd ~/workspace
-mkdir -p boilerplate-eclipse
-cd boilerplate-eclipse
+mkdir -p pid-eclipse
+cd pid-eclipse
 cmake -G "Eclipse CDT4 - Unix Makefiles" -D CMAKE_BUILD_TYPE=Debug -D CMAKE_ECLIPSE_VERSION=4.7.0 -D CMAKE_CXX_COMPILER_ARG1=-std=c++14 ../pid-controller-software/
 ```
 
 ### Import
 
 Open Eclipse, go to File -> Import -> General -> Existing Projects into Workspace -> 
-Select "boilerplate-eclipse" directory created previously as root directory -> Finish
+Select "pid-eclipse" directory created previously as root directory -> Finish
 
 ### Edit
 
@@ -121,12 +121,12 @@ Source files may be edited under the "[Source Directory]" label in the Project E
 
 ### Build
 
-To build the project, in Eclipse, unfold boilerplate-eclipse project in Project Explorer,
+To build the project, in Eclipse, unfold pid-eclipse project in Project Explorer,
 unfold Build Targets, double click on "all" to build all projects.
 
 ### Run
 
-1. In Eclipse, right click on the boilerplate-eclipse in Project Explorer,
+1. In Eclipse, right click on the pid-eclipse in Project Explorer,
 select Run As -> Local C/C++ Application
 
 2. Choose the binaries to run (e.g. shell-app, cpp-test for unit testing)
