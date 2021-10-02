@@ -78,6 +78,19 @@ Run cpplint: Results are stored in `./results/cpplint_result.txt`
 sh run_cpplint.sh
 ```
 
+## Implementation Instructions:
+<details>
+<summary><strong>TODO</strong></summary>
+
++ [pid.cpp](./src/pid.cpp)
+    + Initialize the constructor params,
+    + Implement the getters and setters,
+    + Implement the compute method as per the [activity diagram](./docs/images/activity_diagram_PID_compute_method.png).
+
+
+</details>
+
+
 ## Working with Eclipse IDE ##
 
 ### Installation
