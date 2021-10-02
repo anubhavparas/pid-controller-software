@@ -25,6 +25,8 @@ The following are the proposed designs for the controller:
 
 ![alt text](./docs/images/pid_class_diagram.png?raw=true "PID Controller")
 
+Flow diagrams can be found [here](./docs/images/).
+
 ![alt text](./docs/images/activity_diagram_PIDObjectCreation.png?raw=true "PID Controller Instance Creation")
 
 ![alt text](./docs/images/activity_diagram_PID_compute_method.png?raw=true "PID Controller compute output logic")
