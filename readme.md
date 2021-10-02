@@ -33,7 +33,7 @@ Flow diagrams can be found [here](./docs/images/).
 <summary><strong>TODO</strong></summary>
 
 + [pid.cpp](./src/pid.cpp)
-    + Initialize the constructor params,
+    + Initialize the constructor params as per [this](./docs/images/activity_diagram_PIDObjectCreation.png),
     + Implement the getters and setters,
     + Implement the `compute(double, double)` method as per the [activity diagram](./docs/images/activity_diagram_PID_compute_method.png).
 + Look for `TODO(Pair2)` in the workspace and implement the required methods.
