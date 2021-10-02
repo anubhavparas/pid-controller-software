@@ -27,6 +27,8 @@ PIDController::PIDController(double kP, double kI, double kD, double max_value,
   // TODO(Pair2):
   // if dt <= 0 then throw std::invalid_argument
   // set prev_error and integral_sum to 0
+  prev_error = -999;
+  integral_sum = -999;
 }
 
 PIDController::~PIDController() {
@@ -36,6 +38,7 @@ double PIDController::compute(double setpoint_value, double measured_value) {
   std::cout << "Target setpoint value: " << setpoint_value << std::endl;
   std::cout << "Measured value: " << measured_value << std::endl;
   // TODO(Pair2): refer to the activity diagram for compute() method
+  // ./docs/images/activity_diagram_PID_compute_method.png
   return 0;
 }
 
