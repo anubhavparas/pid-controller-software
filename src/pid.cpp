@@ -6,8 +6,8 @@
  *  - Navigator: Charu Sharma
  * 
  *  Part 2: Implementation:
- *  - Driver:
- *  - Navigator:
+ *  - Driver: Shon Cortes
+ *  - Navigator: Arunava Basu
 */
 
 #include <pid.hpp>
@@ -27,8 +27,12 @@ PIDController::PIDController(double kP, double kI, double kD, double max_value,
   // TODO(Pair2):
   // if dt <= 0 then throw std::invalid_argument
   // set prev_error and integral_sum to 0
-  prev_error = -999;
-  integral_sum = -999;
+  if (dt <= 0) {
+    throw std::invalid_argument("dt should be greater than 0.");
+  }
+
+  prev_error = 0;
+  integral_sum = 0;
 }
 
 PIDController::~PIDController() {
@@ -44,7 +48,7 @@ double PIDController::compute(double setpoint_value, double measured_value) {
 
 double PIDController::get_dt() const {
   // TODO(Pair2): return dt
-  return 0;
+  return dt;
 }
 
 void PIDController::set_dt(double dt) {
@@ -54,55 +58,60 @@ void PIDController::set_dt(double dt) {
 
 double PIDController::get_kD() const {
   // TODO(Pair2): return the value of kD
-  return 0;
+  return kD;
 }
 
 void PIDController::set_kD(double kD) {
 // TODO(Pair2): set the value of kD
+  kD = kD;
 }
 
 double PIDController::get_kI() const {
 // TODO(Pair2): return the value of kI
-return 0;
+return kI;
 }
 
 void PIDController::set_kI(double kI) {
 // TODO(Pair2): set the value of kI
+kI = kI;
 }
 
 double PIDController::get_kP() const {
 // TODO(Pair2): return the value of kP
-return 0;
+return kP;
 }
 
 void PIDController::set_kP(double kP) {
 // TODO(Pair2): set the value of kP
+kP = kP;
 }
 
 double PIDController::get_max_value() const {
 // TODO(Pair2): return the value of max_value
-return 0;
+return max_value;
 }
 
 void PIDController::set_max_value(double maxValue) {
 // TODO(Pair2): set the value of max_value
+max_value = maxValue;
 }
 
 double PIDController::get_min_value() const {
 // TODO(Pair2) return the value of min_value
-return 0;
+return min_value;
 }
 
 void PIDController::set_min_value(double minValue) {
 // TODO(Pair2): set the value of min_value
+min_value = minValue;
 }
 
 double PIDController::get_prev_error() const {
 // TODO(Pair2): return the value of prev_error
-return -999;
+return prev_error;
 }
 
 double PIDController::get_integral_sum() const {
 // TODO(Pair2): return the value of integral_sum
-return -999;
+return integral_sum;
 }
