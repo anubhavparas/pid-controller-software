@@ -9,7 +9,9 @@
  *  - Navigator: Arunava Basu
 */
 
-#pragma once
+#ifndef PID_HPP_
+#define PID_HPP_
+#endif  // PID_HPP_
 
 /**
  * @brief PIDController interface will have the compute() method.
