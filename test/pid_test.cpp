@@ -17,8 +17,7 @@
 
 void createPIDCtrlInstanceWithInvalidDT(double dt) {
   std::unique_ptr<AbstractPIDController> pidController(
-      new PIDController(0.1, 0.1, 0.1, 100.0, -100.0, dt));
-}
+      new PIDController(0.1, 0.1, 0.1, 100.0, -100.0, dt));}
 
 // To test that the dt (sampling time) in the PIDController can never be <=0
 TEST(PIDController_Test, invalid_dt_throws_exception) {
