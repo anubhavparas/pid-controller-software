@@ -1,0 +1,4 @@
+[src/pid.cpp:72]: (warning) Redundant assignment of 'dt' to itself.
+[src/pid.cpp:81]: (warning) Redundant assignment of 'kD' to itself.
+[src/pid.cpp:89]: (warning) Redundant assignment of 'kI' to itself.
+[src/pid.cpp:97]: (warning) Redundant assignment of 'kP' to itself.
