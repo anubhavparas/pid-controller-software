@@ -38,7 +38,7 @@ double PIDController::compute(double setpoint_value, double measured_value) {
   std::cout << "Target setpoint value: " << setpoint_value << std::endl;
   std::cout << "Measured value: " << measured_value << std::endl;
 
-  double error = setpoint_value - prev_error;
+  double error = setpoint_value - measured_value;
 
   double proportional_out = kP * error;
 
@@ -69,7 +69,7 @@ void PIDController::set_dt(double dt) {
   if (dt <= 0) {
     throw std::invalid_argument("dt should be greater than 0.");
   } else {
-    dt = dt;
+    this->dt = dt;
   }
 }
 
@@ -78,7 +78,7 @@ double PIDController::get_kD() const {
 }
 
 void PIDController::set_kD(double kD) {
-  kD = kD;
+  this->kD = kD;
 }
 
 double PIDController::get_kI() const {
@@ -86,7 +86,7 @@ return kI;
 }
 
 void PIDController::set_kI(double kI) {
-kI = kI;
+  this->kI = kI;
 }
 
 double PIDController::get_kP() const {
@@ -94,7 +94,7 @@ return kP;
 }
 
 void PIDController::set_kP(double kP) {
-kP = kP;
+  this->kP = kP;
 }
 
 double PIDController::get_max_value() const {
