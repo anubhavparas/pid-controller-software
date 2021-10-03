@@ -37,9 +37,28 @@ PIDController::~PIDController() {
 double PIDController::compute(double setpoint_value, double measured_value) {
   std::cout << "Target setpoint value: " << setpoint_value << std::endl;
   std::cout << "Measured value: " << measured_value << std::endl;
-  // TODO(Pair2): refer to the activity diagram for compute() method
-  // ./docs/images/activity_diagram_PID_compute_method.png
-  return 0;
+
+  double error = setpoint_value - prev_error;
+
+  double proportional_out = kP * error;
+
+  integral_sum += error * dt;
+  double integral_out = kI * integral_sum;
+
+  double derivative = (error - prev_error) / dt;
+  double derivative_out = kD * derivative;
+
+  double output = proportional_out + integral_out + derivative_out;
+
+  if (output > max_value) {
+    output = max_value;
+  } else if (output < min_value) {
+    output = min_value;
+  }
+
+  prev_error = error;
+
+  return output;
 }
 
 double PIDController::get_dt() const {
