@@ -9,8 +9,8 @@ Authors:
     - Driver: [Anubhav Paras](<https://github.com/anubhavparas>)
     - Navigator: [Charu Sharma](<https://github.com/Sharma117555448>)
 - Part 2: Implementation:
-    - Driver: 
-    - Navigator: 
+    - Driver: Shon Cortes
+    - Navigator: Arunava Basu
 
 ## Overview
 
