@@ -5,11 +5,12 @@
  *  - Navigator: Charu Sharma
  * 
  *  Part 2: Implementation:
- *  - Driver:
- *  - Navigator:
+ *  - Driver: Shon Cortes
+ *  - Navigator: Arunava Basu
 */
 
-#pragma once
+#ifndef INCLUDE_PID_HPP_
+#define INCLUDE_PID_HPP_
 
 /**
  * @brief PIDController interface will have the compute() method.
@@ -204,3 +205,5 @@ class PIDController : public AbstractPIDController {
   double integral_sum;
   double prev_error;
 };
+
+#endif  // INCLUDE_PID_HPP_
