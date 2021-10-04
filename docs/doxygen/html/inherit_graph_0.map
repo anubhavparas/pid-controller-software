@@ -1,0 +1,5 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classPIDControllerInterface.html" title="PIDController interface will have the compute() method. This can be implemented by any concrete class..." alt="" coords="5,5,157,32"/>
+<area shape="rect" id="node2" href="$classAbstractPIDController.html" title="PIDController abstract class. This contains all the getters and setters required for the member data..." alt="" coords="205,5,356,32"/>
+<area shape="rect" id="node3" href="$classPIDController.html" title="Concrete implementation of the PIDController abstract class and interface. " alt="" coords="404,5,505,32"/>
+</map>

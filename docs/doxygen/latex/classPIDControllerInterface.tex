@@ -1,0 +1,75 @@
+\hypertarget{classPIDControllerInterface}{}\section{P\+I\+D\+Controller\+Interface Class Reference}
+\label{classPIDControllerInterface}\index{P\+I\+D\+Controller\+Interface@{P\+I\+D\+Controller\+Interface}}
+
+
+\hyperlink{classPIDController}{P\+I\+D\+Controller} interface will have the \hyperlink{classPIDControllerInterface_a6b5340968cb9d235cf3b52bd61c973e1}{compute()} method. This can be implemented by any concrete class.  
+
+
+
+
+{\ttfamily \#include $<$pid.\+hpp$>$}
+
+
+
+Inheritance diagram for P\+I\+D\+Controller\+Interface\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classPIDControllerInterface__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual double \hyperlink{classPIDControllerInterface_a6b5340968cb9d235cf3b52bd61c973e1}{compute} (double setpoint\+\_\+value, double measured\+\_\+value)=0
+\begin{DoxyCompactList}\small\item\em To find the controller output value based on the target setpoint and measured values. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPIDControllerInterface_a96ae6d60601a238ddf999cee5fe705a0}\label{classPIDControllerInterface_a96ae6d60601a238ddf999cee5fe705a0}} 
+virtual \hyperlink{classPIDControllerInterface_a96ae6d60601a238ddf999cee5fe705a0}{$\sim$\+P\+I\+D\+Controller\+Interface} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \hyperlink{classPIDControllerInterface}{P\+I\+D\+Controller\+Interface} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classPIDController}{P\+I\+D\+Controller} interface will have the \hyperlink{classPIDControllerInterface_a6b5340968cb9d235cf3b52bd61c973e1}{compute()} method. This can be implemented by any concrete class. 
+
+Copyright 2021 Anubhav Paras, Charu Sharma, Arunava Basu \& Shon Cortes  Part 1\+: Design\+:
+\begin{DoxyItemize}
+\item Driver\+: Anubhav Paras
+\item Navigator\+: Charu Sharma
+\end{DoxyItemize}
+
+Part 2\+: Implementation\+:
+\begin{DoxyItemize}
+\item Driver\+: Shon Cortes
+\item Navigator\+: Arunava Basu 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPIDControllerInterface_a6b5340968cb9d235cf3b52bd61c973e1}\label{classPIDControllerInterface_a6b5340968cb9d235cf3b52bd61c973e1}} 
+\index{P\+I\+D\+Controller\+Interface@{P\+I\+D\+Controller\+Interface}!compute@{compute}}
+\index{compute@{compute}!P\+I\+D\+Controller\+Interface@{P\+I\+D\+Controller\+Interface}}
+\subsubsection{\texorpdfstring{compute()}{compute()}}
+{\footnotesize\ttfamily virtual double P\+I\+D\+Controller\+Interface\+::compute (\begin{DoxyParamCaption}\item[{double}]{setpoint\+\_\+value,  }\item[{double}]{measured\+\_\+value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+To find the controller output value based on the target setpoint and measured values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em setpoint\+\_\+value} & target value of the parameter \\
+\hline
+{\em measured\+\_\+value} & current measured estimate of the parameter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classPIDController_a0b57631654b460a4668f01b7cc0c8ecb}{P\+I\+D\+Controller}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/pid.\+hpp\end{DoxyCompactItemize}
