@@ -11,7 +11,6 @@
 
 #ifndef PID_HPP_
 #define PID_HPP_
-#endif  // PID_HPP_
 
 /**
  * @brief PIDController interface will have the compute() method.
@@ -206,3 +205,5 @@ class PIDController : public AbstractPIDController {
   double integral_sum;
   double prev_error;
 };
+
+#endif  // PID_HPP_
