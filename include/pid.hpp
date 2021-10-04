@@ -9,8 +9,8 @@
  *  - Navigator: Arunava Basu
 */
 
-#ifndef PID_HPP_
-#define PID_HPP_
+#ifndef INCLUDE_PID_HPP_
+#define INCLUDE_PID_HPP_
 
 /**
  * @brief PIDController interface will have the compute() method.
@@ -206,4 +206,4 @@ class PIDController : public AbstractPIDController {
   double prev_error;
 };
 
-#endif  // PID_HPP_
+#endif  // INCLUDE_PID_HPP_

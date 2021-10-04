@@ -65,11 +65,11 @@ double PIDController::get_dt() const {
   return dt;
 }
 
-void PIDController::set_dt(double dt) {
+void PIDController::set_dt(double dT) {
   if (dt <= 0) {
     throw std::invalid_argument("dt should be greater than 0.");
   } else {
-    this->dt = dt;
+    this->dt = dT;
   }
 }
 
@@ -77,24 +77,24 @@ double PIDController::get_kD() const {
   return kD;
 }
 
-void PIDController::set_kD(double kD) {
-  this->kD = kD;
+void PIDController::set_kD(double kd) {
+  this->kD = kd;
 }
 
 double PIDController::get_kI() const {
 return kI;
 }
 
-void PIDController::set_kI(double kI) {
-  this->kI = kI;
+void PIDController::set_kI(double ki) {
+  this->kI = ki;
 }
 
 double PIDController::get_kP() const {
 return kP;
 }
 
-void PIDController::set_kP(double kP) {
-  this->kP = kP;
+void PIDController::set_kP(double kp) {
+  this->kP = kp;
 }
 
 double PIDController::get_max_value() const {
