@@ -1,0 +1,4 @@
+<map id="AbstractPIDController" name="AbstractPIDController">
+<area shape="rect" id="node3" href="$classPIDController.html" title="Concrete implementation of the PIDController abstract class and interface. " alt="" coords="31,155,132,181"/>
+<area shape="rect" id="node2" href="$classPIDControllerInterface.html" title="PIDController interface will have the compute() method. This can be implemented by any concrete class..." alt="" coords="5,5,157,32"/>
+</map>

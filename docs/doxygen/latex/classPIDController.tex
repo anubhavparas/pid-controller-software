@@ -1,0 +1,387 @@
+\hypertarget{classPIDController}{}\section{P\+I\+D\+Controller Class Reference}
+\label{classPIDController}\index{P\+I\+D\+Controller@{P\+I\+D\+Controller}}
+
+
+Concrete implementation of the \hyperlink{classPIDController}{P\+I\+D\+Controller} abstract class and interface.  
+
+
+
+
+{\ttfamily \#include $<$pid.\+hpp$>$}
+
+
+
+Inheritance diagram for P\+I\+D\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classPIDController__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for P\+I\+D\+Controller\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classPIDController__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPIDController_aba84b9949f9e74bf038cc0a5a7ad7c67}{P\+I\+D\+Controller} (double kP, double kI, double kD, double max\+\_\+value, double min\+\_\+value, double dt)
+\begin{DoxyCompactList}\small\item\em Construct a new \hyperlink{classPIDController}{P\+I\+D\+Controller} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPIDController_a690e7ad4796e5c5143aa4b90f2f6677b}\label{classPIDController_a690e7ad4796e5c5143aa4b90f2f6677b}} 
+\hyperlink{classPIDController_a690e7ad4796e5c5143aa4b90f2f6677b}{$\sim$\+P\+I\+D\+Controller} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \hyperlink{classPIDController}{P\+I\+D\+Controller} object. \end{DoxyCompactList}\item 
+double \hyperlink{classPIDController_a0b57631654b460a4668f01b7cc0c8ecb}{compute} (double setpoint\+\_\+value, double measured\+\_\+value) override
+\item 
+double \hyperlink{classPIDController_a338490568fd2de02c4e1eea130a816c1}{get\+\_\+dt} () const override
+\begin{DoxyCompactList}\small\item\em Get sampling time -\/ dt. \end{DoxyCompactList}\item 
+void \hyperlink{classPIDController_a04c753e2ff22f62017f82e0e4143493b}{set\+\_\+dt} (double dt) override
+\begin{DoxyCompactList}\small\item\em Set sampling time -\/ dt. \end{DoxyCompactList}\item 
+double \hyperlink{classPIDController_a0f366ed8608947fa17454682773a48ee}{get\+\_\+kD} () const override
+\begin{DoxyCompactList}\small\item\em Get value of differential gain kD. \end{DoxyCompactList}\item 
+void \hyperlink{classPIDController_a88adb39de00d22b72a8a33716fc1c117}{set\+\_\+kD} (double kD) override
+\begin{DoxyCompactList}\small\item\em Set value of differential gain kD. \end{DoxyCompactList}\item 
+double \hyperlink{classPIDController_af79b88e9f6c99667fb1474219f00f6f3}{get\+\_\+kI} () const override
+\begin{DoxyCompactList}\small\item\em Get value of integral gain kI. \end{DoxyCompactList}\item 
+void \hyperlink{classPIDController_a5724db51f8d64e8adf5c6f466dc66d8c}{set\+\_\+kI} (double kI) override
+\begin{DoxyCompactList}\small\item\em Set value of integral gain kI. \end{DoxyCompactList}\item 
+double \hyperlink{classPIDController_ac838d1c775ff75c7845602b189e5f214}{get\+\_\+kP} () const
+\begin{DoxyCompactList}\small\item\em Get value of proportional gain kP. \end{DoxyCompactList}\item 
+void \hyperlink{classPIDController_a7b97f2fa293347e9e9391d5ca3b80e8b}{set\+\_\+kP} (double kP)
+\begin{DoxyCompactList}\small\item\em Set value of proportional gain kP. \end{DoxyCompactList}\item 
+double \hyperlink{classPIDController_ad4420e831743f6b66303f6a24bf7fbdc}{get\+\_\+max\+\_\+value} () const
+\begin{DoxyCompactList}\small\item\em Get the max value for the parameter. \end{DoxyCompactList}\item 
+void \hyperlink{classPIDController_a942161494e6b3bc4996e688f390a59bf}{set\+\_\+max\+\_\+value} (double max\+Value)
+\begin{DoxyCompactList}\small\item\em Set the max value for the parameter. \end{DoxyCompactList}\item 
+double \hyperlink{classPIDController_ab29545c6bcce3ef804bdbf0f2441cb4e}{get\+\_\+min\+\_\+value} () const
+\begin{DoxyCompactList}\small\item\em Get the min value for the parameter. \end{DoxyCompactList}\item 
+void \hyperlink{classPIDController_a101d69b58ee371c45b1046dcd2bd58e7}{set\+\_\+min\+\_\+value} (double min\+Value)
+\begin{DoxyCompactList}\small\item\em Set the min value for the parameter. \end{DoxyCompactList}\item 
+double \hyperlink{classPIDController_a7617f92c27f92fa53e8c690a721e9965}{get\+\_\+prev\+\_\+error} () const
+\begin{DoxyCompactList}\small\item\em Get the prev\+\_\+error. \end{DoxyCompactList}\item 
+double \hyperlink{classPIDController_a9f5ea16a313044807fbd23135646c88e}{get\+\_\+integral\+\_\+sum} () const
+\begin{DoxyCompactList}\small\item\em Get the integral\+\_\+sum over time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Concrete implementation of the \hyperlink{classPIDController}{P\+I\+D\+Controller} abstract class and interface. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPIDController_aba84b9949f9e74bf038cc0a5a7ad7c67}\label{classPIDController_aba84b9949f9e74bf038cc0a5a7ad7c67}} 
+\index{P\+I\+D\+Controller@{P\+I\+D\+Controller}!P\+I\+D\+Controller@{P\+I\+D\+Controller}}
+\index{P\+I\+D\+Controller@{P\+I\+D\+Controller}!P\+I\+D\+Controller@{P\+I\+D\+Controller}}
+\subsubsection{\texorpdfstring{P\+I\+D\+Controller()}{PIDController()}}
+{\footnotesize\ttfamily P\+I\+D\+Controller\+::\+P\+I\+D\+Controller (\begin{DoxyParamCaption}\item[{double}]{kP,  }\item[{double}]{kI,  }\item[{double}]{kD,  }\item[{double}]{max\+\_\+value,  }\item[{double}]{min\+\_\+value,  }\item[{double}]{dt }\end{DoxyParamCaption})}
+
+
+
+Construct a new \hyperlink{classPIDController}{P\+I\+D\+Controller} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kP} & proportional gain \\
+\hline
+{\em kI} & integral gain \\
+\hline
+{\em kD} & differential gain \\
+\hline
+{\em max\+\_\+value} & maximum value that the parameter (ex\+: velocity) can have \\
+\hline
+{\em min\+\_\+value} & minimum value that the parameter (ex\+: velocity) can have \\
+\hline
+{\em dt} & sampling time\\
+\hline
+\end{DoxyParams}
+Copyright 2021 Anubhav Paras, Charu Sharma, Arunava Basu \& Shon Cortes  Part 1\+: Design\+:
+\begin{DoxyItemize}
+\item Driver\+: Anubhav Paras
+\item Navigator\+: Charu Sharma
+\end{DoxyItemize}
+
+Part 2\+: Implementation\+:
+\begin{DoxyItemize}
+\item Driver\+: Shon Cortes
+\item Navigator\+: Arunava Basu 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPIDController_a0b57631654b460a4668f01b7cc0c8ecb}\label{classPIDController_a0b57631654b460a4668f01b7cc0c8ecb}} 
+\index{P\+I\+D\+Controller@{P\+I\+D\+Controller}!compute@{compute}}
+\index{compute@{compute}!P\+I\+D\+Controller@{P\+I\+D\+Controller}}
+\subsubsection{\texorpdfstring{compute()}{compute()}}
+{\footnotesize\ttfamily double P\+I\+D\+Controller\+::compute (\begin{DoxyParamCaption}\item[{double}]{setpoint\+\_\+value,  }\item[{double}]{measured\+\_\+value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em setpoint\+\_\+value} & target value of the parameter \\
+\hline
+{\em measured\+\_\+value} & current measured estimate of the parameter \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classPIDControllerInterface_a6b5340968cb9d235cf3b52bd61c973e1}{P\+I\+D\+Controller\+Interface}.
+
+\mbox{\Hypertarget{classPIDController_a338490568fd2de02c4e1eea130a816c1}\label{classPIDController_a338490568fd2de02c4e1eea130a816c1}} 
+\index{P\+I\+D\+Controller@{P\+I\+D\+Controller}!get\+\_\+dt@{get\+\_\+dt}}
+\index{get\+\_\+dt@{get\+\_\+dt}!P\+I\+D\+Controller@{P\+I\+D\+Controller}}
+\subsubsection{\texorpdfstring{get\+\_\+dt()}{get\_dt()}}
+{\footnotesize\ttfamily double P\+I\+D\+Controller\+::get\+\_\+dt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get sampling time -\/ dt. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAbstractPIDController}{Abstract\+P\+I\+D\+Controller}.
+
+\mbox{\Hypertarget{classPIDController_a9f5ea16a313044807fbd23135646c88e}\label{classPIDController_a9f5ea16a313044807fbd23135646c88e}} 
+\index{P\+I\+D\+Controller@{P\+I\+D\+Controller}!get\+\_\+integral\+\_\+sum@{get\+\_\+integral\+\_\+sum}}
+\index{get\+\_\+integral\+\_\+sum@{get\+\_\+integral\+\_\+sum}!P\+I\+D\+Controller@{P\+I\+D\+Controller}}
+\subsubsection{\texorpdfstring{get\+\_\+integral\+\_\+sum()}{get\_integral\_sum()}}
+{\footnotesize\ttfamily double P\+I\+D\+Controller\+::get\+\_\+integral\+\_\+sum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the integral\+\_\+sum over time. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAbstractPIDController}{Abstract\+P\+I\+D\+Controller}.
+
+\mbox{\Hypertarget{classPIDController_a0f366ed8608947fa17454682773a48ee}\label{classPIDController_a0f366ed8608947fa17454682773a48ee}} 
+\index{P\+I\+D\+Controller@{P\+I\+D\+Controller}!get\+\_\+kD@{get\+\_\+kD}}
+\index{get\+\_\+kD@{get\+\_\+kD}!P\+I\+D\+Controller@{P\+I\+D\+Controller}}
+\subsubsection{\texorpdfstring{get\+\_\+k\+D()}{get\_kD()}}
+{\footnotesize\ttfamily double P\+I\+D\+Controller\+::get\+\_\+kD (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get value of differential gain kD. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAbstractPIDController}{Abstract\+P\+I\+D\+Controller}.
+
+\mbox{\Hypertarget{classPIDController_af79b88e9f6c99667fb1474219f00f6f3}\label{classPIDController_af79b88e9f6c99667fb1474219f00f6f3}} 
+\index{P\+I\+D\+Controller@{P\+I\+D\+Controller}!get\+\_\+kI@{get\+\_\+kI}}
+\index{get\+\_\+kI@{get\+\_\+kI}!P\+I\+D\+Controller@{P\+I\+D\+Controller}}
+\subsubsection{\texorpdfstring{get\+\_\+k\+I()}{get\_kI()}}
+{\footnotesize\ttfamily double P\+I\+D\+Controller\+::get\+\_\+kI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get value of integral gain kI. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAbstractPIDController}{Abstract\+P\+I\+D\+Controller}.
+
+\mbox{\Hypertarget{classPIDController_ac838d1c775ff75c7845602b189e5f214}\label{classPIDController_ac838d1c775ff75c7845602b189e5f214}} 
+\index{P\+I\+D\+Controller@{P\+I\+D\+Controller}!get\+\_\+kP@{get\+\_\+kP}}
+\index{get\+\_\+kP@{get\+\_\+kP}!P\+I\+D\+Controller@{P\+I\+D\+Controller}}
+\subsubsection{\texorpdfstring{get\+\_\+k\+P()}{get\_kP()}}
+{\footnotesize\ttfamily double P\+I\+D\+Controller\+::get\+\_\+kP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get value of proportional gain kP. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAbstractPIDController}{Abstract\+P\+I\+D\+Controller}.
+
+\mbox{\Hypertarget{classPIDController_ad4420e831743f6b66303f6a24bf7fbdc}\label{classPIDController_ad4420e831743f6b66303f6a24bf7fbdc}} 
+\index{P\+I\+D\+Controller@{P\+I\+D\+Controller}!get\+\_\+max\+\_\+value@{get\+\_\+max\+\_\+value}}
+\index{get\+\_\+max\+\_\+value@{get\+\_\+max\+\_\+value}!P\+I\+D\+Controller@{P\+I\+D\+Controller}}
+\subsubsection{\texorpdfstring{get\+\_\+max\+\_\+value()}{get\_max\_value()}}
+{\footnotesize\ttfamily double P\+I\+D\+Controller\+::get\+\_\+max\+\_\+value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the max value for the parameter. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAbstractPIDController}{Abstract\+P\+I\+D\+Controller}.
+
+\mbox{\Hypertarget{classPIDController_ab29545c6bcce3ef804bdbf0f2441cb4e}\label{classPIDController_ab29545c6bcce3ef804bdbf0f2441cb4e}} 
+\index{P\+I\+D\+Controller@{P\+I\+D\+Controller}!get\+\_\+min\+\_\+value@{get\+\_\+min\+\_\+value}}
+\index{get\+\_\+min\+\_\+value@{get\+\_\+min\+\_\+value}!P\+I\+D\+Controller@{P\+I\+D\+Controller}}
+\subsubsection{\texorpdfstring{get\+\_\+min\+\_\+value()}{get\_min\_value()}}
+{\footnotesize\ttfamily double P\+I\+D\+Controller\+::get\+\_\+min\+\_\+value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the min value for the parameter. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAbstractPIDController}{Abstract\+P\+I\+D\+Controller}.
+
+\mbox{\Hypertarget{classPIDController_a7617f92c27f92fa53e8c690a721e9965}\label{classPIDController_a7617f92c27f92fa53e8c690a721e9965}} 
+\index{P\+I\+D\+Controller@{P\+I\+D\+Controller}!get\+\_\+prev\+\_\+error@{get\+\_\+prev\+\_\+error}}
+\index{get\+\_\+prev\+\_\+error@{get\+\_\+prev\+\_\+error}!P\+I\+D\+Controller@{P\+I\+D\+Controller}}
+\subsubsection{\texorpdfstring{get\+\_\+prev\+\_\+error()}{get\_prev\_error()}}
+{\footnotesize\ttfamily double P\+I\+D\+Controller\+::get\+\_\+prev\+\_\+error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Get the prev\+\_\+error. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAbstractPIDController}{Abstract\+P\+I\+D\+Controller}.
+
+\mbox{\Hypertarget{classPIDController_a04c753e2ff22f62017f82e0e4143493b}\label{classPIDController_a04c753e2ff22f62017f82e0e4143493b}} 
+\index{P\+I\+D\+Controller@{P\+I\+D\+Controller}!set\+\_\+dt@{set\+\_\+dt}}
+\index{set\+\_\+dt@{set\+\_\+dt}!P\+I\+D\+Controller@{P\+I\+D\+Controller}}
+\subsubsection{\texorpdfstring{set\+\_\+dt()}{set\_dt()}}
+{\footnotesize\ttfamily void P\+I\+D\+Controller\+::set\+\_\+dt (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set sampling time -\/ dt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dt} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classAbstractPIDController}{Abstract\+P\+I\+D\+Controller}.
+
+\mbox{\Hypertarget{classPIDController_a88adb39de00d22b72a8a33716fc1c117}\label{classPIDController_a88adb39de00d22b72a8a33716fc1c117}} 
+\index{P\+I\+D\+Controller@{P\+I\+D\+Controller}!set\+\_\+kD@{set\+\_\+kD}}
+\index{set\+\_\+kD@{set\+\_\+kD}!P\+I\+D\+Controller@{P\+I\+D\+Controller}}
+\subsubsection{\texorpdfstring{set\+\_\+k\+D()}{set\_kD()}}
+{\footnotesize\ttfamily void P\+I\+D\+Controller\+::set\+\_\+kD (\begin{DoxyParamCaption}\item[{double}]{kD }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set value of differential gain kD. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kD} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classAbstractPIDController}{Abstract\+P\+I\+D\+Controller}.
+
+\mbox{\Hypertarget{classPIDController_a5724db51f8d64e8adf5c6f466dc66d8c}\label{classPIDController_a5724db51f8d64e8adf5c6f466dc66d8c}} 
+\index{P\+I\+D\+Controller@{P\+I\+D\+Controller}!set\+\_\+kI@{set\+\_\+kI}}
+\index{set\+\_\+kI@{set\+\_\+kI}!P\+I\+D\+Controller@{P\+I\+D\+Controller}}
+\subsubsection{\texorpdfstring{set\+\_\+k\+I()}{set\_kI()}}
+{\footnotesize\ttfamily void P\+I\+D\+Controller\+::set\+\_\+kI (\begin{DoxyParamCaption}\item[{double}]{kI }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set value of integral gain kI. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kI} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classAbstractPIDController}{Abstract\+P\+I\+D\+Controller}.
+
+\mbox{\Hypertarget{classPIDController_a7b97f2fa293347e9e9391d5ca3b80e8b}\label{classPIDController_a7b97f2fa293347e9e9391d5ca3b80e8b}} 
+\index{P\+I\+D\+Controller@{P\+I\+D\+Controller}!set\+\_\+kP@{set\+\_\+kP}}
+\index{set\+\_\+kP@{set\+\_\+kP}!P\+I\+D\+Controller@{P\+I\+D\+Controller}}
+\subsubsection{\texorpdfstring{set\+\_\+k\+P()}{set\_kP()}}
+{\footnotesize\ttfamily void P\+I\+D\+Controller\+::set\+\_\+kP (\begin{DoxyParamCaption}\item[{double}]{kP }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set value of proportional gain kP. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kP} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classAbstractPIDController}{Abstract\+P\+I\+D\+Controller}.
+
+\mbox{\Hypertarget{classPIDController_a942161494e6b3bc4996e688f390a59bf}\label{classPIDController_a942161494e6b3bc4996e688f390a59bf}} 
+\index{P\+I\+D\+Controller@{P\+I\+D\+Controller}!set\+\_\+max\+\_\+value@{set\+\_\+max\+\_\+value}}
+\index{set\+\_\+max\+\_\+value@{set\+\_\+max\+\_\+value}!P\+I\+D\+Controller@{P\+I\+D\+Controller}}
+\subsubsection{\texorpdfstring{set\+\_\+max\+\_\+value()}{set\_max\_value()}}
+{\footnotesize\ttfamily void P\+I\+D\+Controller\+::set\+\_\+max\+\_\+value (\begin{DoxyParamCaption}\item[{double}]{max\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the max value for the parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Value} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classAbstractPIDController}{Abstract\+P\+I\+D\+Controller}.
+
+\mbox{\Hypertarget{classPIDController_a101d69b58ee371c45b1046dcd2bd58e7}\label{classPIDController_a101d69b58ee371c45b1046dcd2bd58e7}} 
+\index{P\+I\+D\+Controller@{P\+I\+D\+Controller}!set\+\_\+min\+\_\+value@{set\+\_\+min\+\_\+value}}
+\index{set\+\_\+min\+\_\+value@{set\+\_\+min\+\_\+value}!P\+I\+D\+Controller@{P\+I\+D\+Controller}}
+\subsubsection{\texorpdfstring{set\+\_\+min\+\_\+value()}{set\_min\_value()}}
+{\footnotesize\ttfamily void P\+I\+D\+Controller\+::set\+\_\+min\+\_\+value (\begin{DoxyParamCaption}\item[{double}]{min\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Set the min value for the parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min\+Value} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classAbstractPIDController}{Abstract\+P\+I\+D\+Controller}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/pid.\+hpp\item 
+src/pid.\+cpp\end{DoxyCompactItemize}

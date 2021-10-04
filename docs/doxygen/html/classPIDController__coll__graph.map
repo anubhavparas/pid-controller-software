@@ -1,0 +1,4 @@
+<map id="PIDController" name="PIDController">
+<area shape="rect" id="node2" href="$classAbstractPIDController.html" title="PIDController abstract class. This contains all the getters and setters required for the member data..." alt="" coords="6,80,157,107"/>
+<area shape="rect" id="node3" href="$classPIDControllerInterface.html" title="PIDController interface will have the compute() method. This can be implemented by any concrete class..." alt="" coords="5,5,157,32"/>
+</map>
