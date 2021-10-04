@@ -66,7 +66,7 @@ double PIDController::get_dt() const {
 }
 
 void PIDController::set_dt(double dT) {
-  if (dt <= 0) {
+  if (dT <= 0) {
     throw std::invalid_argument("dt should be greater than 0.");
   } else {
     this->dt = dT;
