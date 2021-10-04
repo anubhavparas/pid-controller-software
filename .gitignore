@@ -12,3 +12,4 @@ build/
 
 # Vscode
 .vscode/
+./vscode/settings.json
